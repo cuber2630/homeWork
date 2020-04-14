@@ -1,0 +1,15 @@
+{
+  "name": "chnbase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chnApi.js",
+  "scripts": {
+    "test": "node chnApi.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^2.0.0"
+  }
+}
