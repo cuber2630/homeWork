@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1573BBBD-5DF4-D212-E860-F04E74758622}</ProjectGuid>
+    <ProjectGuid>{D0E21E0F-051D-F9B0-B857-E06CBC4A2EB7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>chnApi</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -47,7 +47,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\cuber_new\.node-gyp\12.16.1\include\node;C:\Users\cuber_new\.node-gyp\12.16.1\src;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\config;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\openssl\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\uv\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\zlib;C:\Users\cuber_new\.node-gyp\12.16.1\deps\v8\include;D:\node\chnbase\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\cuber_new\.node-gyp\12.16.1\include\node;C:\Users\cuber_new\.node-gyp\12.16.1\src;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\config;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\openssl\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\uv\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\zlib;C:\Users\cuber_new\.node-gyp\12.16.1\deps\v8\include;D:\node\homeWork\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -77,13 +77,13 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\cuber_new\.node-gyp\12.16.1\include\node;C:\Users\cuber_new\.node-gyp\12.16.1\src;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\config;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\openssl\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\uv\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\zlib;C:\Users\cuber_new\.node-gyp\12.16.1\deps\v8\include;D:\node\chnbase\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\cuber_new\.node-gyp\12.16.1\include\node;C:\Users\cuber_new\.node-gyp\12.16.1\src;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\config;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\openssl\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\uv\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\zlib;C:\Users\cuber_new\.node-gyp\12.16.1\deps\v8\include;D:\node\homeWork\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=chnApi;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;V8_DEPRECATION_WARNINGS;V8_IMMINENT_DEPRECATION_WARNINGS;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_DISABLE_CPP_EXCEPTIONS;BUILDING_NODE_EXTENSION;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\cuber_new\.node-gyp\12.16.1\include\node;C:\Users\cuber_new\.node-gyp\12.16.1\src;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\config;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\openssl\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\uv\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\zlib;C:\Users\cuber_new\.node-gyp\12.16.1\deps\v8\include;D:\node\chnbase\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\cuber_new\.node-gyp\12.16.1\include\node;C:\Users\cuber_new\.node-gyp\12.16.1\src;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\config;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\openssl\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\uv\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\zlib;C:\Users\cuber_new\.node-gyp\12.16.1\deps\v8\include;D:\node\homeWork\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <CompileAsWinRT>false</CompileAsWinRT>
       <DebugInformationFormat>OldStyle</DebugInformationFormat>
@@ -116,7 +116,7 @@
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>C:\Users\cuber_new\.node-gyp\12.16.1\include\node;C:\Users\cuber_new\.node-gyp\12.16.1\src;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\config;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\openssl\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\uv\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\zlib;C:\Users\cuber_new\.node-gyp\12.16.1\deps\v8\include;D:\node\chnbase\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\cuber_new\.node-gyp\12.16.1\include\node;C:\Users\cuber_new\.node-gyp\12.16.1\src;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\config;C:\Users\cuber_new\.node-gyp\12.16.1\deps\openssl\openssl\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\uv\include;C:\Users\cuber_new\.node-gyp\12.16.1\deps\zlib;C:\Users\cuber_new\.node-gyp\12.16.1\deps\v8\include;D:\node\homeWork\node_modules\node-addon-api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=chnApi;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;V8_DEPRECATION_WARNINGS;V8_IMMINENT_DEPRECATION_WARNINGS;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_DISABLE_CPP_EXCEPTIONS;BUILDING_NODE_EXTENSION;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
   </ItemDefinitionGroup>
@@ -125,12 +125,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\chnApi\chnApi\chnApi.cpp"/>
-    <ClCompile Include="..\chnApi\chnApi\game.cpp"/>
+    <ClCompile Include="..\chnApi\chnApi\ChnMathApi.cpp"/>
+    <ClCompile Include="..\chnApi\chnApi\ChnMathBase.cpp"/>
+    <ClCompile Include="..\chnApi\chnApi\GameBase.cpp"/>
     <ClCompile Include="C:\Users\cuber_new\AppData\Roaming\npm\node_modules\npm\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\node_modules\node-addon-api\src\nothing.vcxproj">
-      <Project>{4C0F3BA4-10DA-8FC2-B696-30BFC585F853}</Project>
+      <Project>{77D409D2-54BE-7B3B-ED32-D2AC68DB441C}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

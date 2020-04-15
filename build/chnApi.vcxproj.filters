@@ -19,6 +19,24 @@
     <Filter Include="..\chnApi\chnApi">
       <UniqueIdentifier>{7FE02DE8-552F-034A-4E09-365B59CBB2E5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\chnApi">
+      <UniqueIdentifier>{7FE02DE8-552F-034A-4E09-365B59CBB2E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\chnApi\chnApi">
+      <UniqueIdentifier>{7FE02DE8-552F-034A-4E09-365B59CBB2E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\chnApi">
+      <UniqueIdentifier>{7FE02DE8-552F-034A-4E09-365B59CBB2E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\chnApi\chnApi">
+      <UniqueIdentifier>{7FE02DE8-552F-034A-4E09-365B59CBB2E5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="C:">
       <UniqueIdentifier>{7B735499-E5DD-1C2B-6C26-70023832A1CF}</UniqueIdentifier>
     </Filter>
@@ -60,7 +78,13 @@
     <ClCompile Include="..\chnApi\chnApi\chnApi.cpp">
       <Filter>..\chnApi\chnApi</Filter>
     </ClCompile>
-    <ClCompile Include="..\chnApi\chnApi\game.cpp">
+    <ClCompile Include="..\chnApi\chnApi\ChnMathApi.cpp">
+      <Filter>..\chnApi\chnApi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chnApi\chnApi\ChnMathBase.cpp">
+      <Filter>..\chnApi\chnApi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\chnApi\chnApi\GameBase.cpp">
       <Filter>..\chnApi\chnApi</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\cuber_new\AppData\Roaming\npm\node_modules\npm\node_modules\node-gyp\src\win_delay_load_hook.cc">

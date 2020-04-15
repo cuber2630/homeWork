@@ -10,11 +10,17 @@ class MyObject : public Napi::ObjectWrap<MyObject> {
 
  private:
   static Napi::FunctionReference constructor;
-
+ 
   Napi::Value GetValue(const Napi::CallbackInfo& info);
   Napi::Value PlusOne(const Napi::CallbackInfo& info);
   Napi::Value Multiply(const Napi::CallbackInfo& info);
+  
+  
+  Napi::Value GetApiVersion(const Napi::CallbackInfo& info);  
+  Napi::Value InitNewUser(const Napi::CallbackInfo& info);   
+  Napi::Value GetMathVersion(const Napi::CallbackInfo& info);
   Napi::Value GetGameBaseValue(const Napi::CallbackInfo& info);  
+
   double value_;
 };
 

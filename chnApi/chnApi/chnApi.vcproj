@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\include&quot;;&quot;D:\node\chnbase\node_modules\node-addon-api&quot;;&quot;D:\node\chnbase\node_modules\node-addon-api\external-napi&quot;"
+				AdditionalIncludeDirectories=""
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -227,7 +227,23 @@
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
 			<File
-				RelativePath=".\game.h"
+				RelativePath=".\ChnMathApi.h"
+				>
+			</File>
+			<File
+				RelativePath=".\ChnMathBase.h"
+				>
+			</File>
+			<File
+				RelativePath=".\GameBase.h"
+				>
+			</File>
+			<File
+				RelativePath=".\MyProtocol.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Protocol.h"
 				>
 			</File>
 		</Filter>
@@ -237,7 +253,15 @@
 			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
 			>
 			<File
-				RelativePath=".\game.cpp"
+				RelativePath=".\ChnMathApi.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\ChnMathBase.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\GameBase.cpp"
 				>
 			</File>
 		</Filter>

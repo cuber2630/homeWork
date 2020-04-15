@@ -1,6 +1,15 @@
 {
     "files.associations": {
         "xiosbase": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "istream": "cpp",
+        "memory": "cpp",
+        "type_traits": "cpp",
+        "xlocnum": "cpp",
+        "string": "cpp",
+        "xstring": "cpp",
+        "functional": "cpp",
+        "system_error": "cpp",
+        "xtr1common": "cpp"
     }
 }

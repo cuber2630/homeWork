@@ -1,9 +1,15 @@
 
-#include "chnApi.h"
-#include "game.h"
 #include <napi.h>
+#include "chnApi.h"
+#include "GameBase.h"
+#include "ChnMathApi.h"
+
+using namespace std;
+
+#define CHN_API_VERSION "chnapi20200415v0.1"
 
 Napi::FunctionReference MyObject::constructor;
+static ChnMathApi	MathEnter;
 
 Napi::Object MyObject::Init(Napi::Env env, Napi::Object exports) {
   Napi::HandleScope scope(env);
@@ -11,10 +17,15 @@ Napi::Object MyObject::Init(Napi::Env env, Napi::Object exports) {
   Napi::Function func =
       DefineClass(env,
                   "MyObject",
-                  {InstanceMethod("plusOne", &MyObject::PlusOne),
-                   InstanceMethod("value", &MyObject::GetValue),
+                  {
+                   InstanceMethod("getApiVersion", &MyObject::GetApiVersion),
+                   InstanceMethod("getMathVersion", &MyObject::GetMathVersion),
                    InstanceMethod("getGameBase", &MyObject::GetGameBaseValue),
-                   InstanceMethod("multiply", &MyObject::Multiply)});
+                   InstanceMethod("initNewUser", &MyObject::InitNewUser),
+                   InstanceMethod("plusOne", &MyObject::PlusOne),
+                   InstanceMethod("value", &MyObject::GetValue),                   
+                   InstanceMethod("multiply", &MyObject::Multiply)                  
+                  });
 
   constructor = Napi::Persistent(func);
   constructor.SuppressDestruct();
@@ -45,13 +56,7 @@ Napi::Value MyObject::GetValue(const Napi::CallbackInfo& info) {
   return Napi::Number::New(info.Env(), num);
 }
 
-Napi::Value MyObject::GetGameBaseValue(const Napi::CallbackInfo& info) {
-  
-  GameBase cGameBase(10);
-  cGameBase.GameLoop(0);
-  double num = (double)cGameBase.showNumber;
-  return Napi::Number::New(info.Env(), num);
-}
+
 
 Napi::Value MyObject::PlusOne(const Napi::CallbackInfo& info) {
   this->value_ = this->value_ + 1;
@@ -72,6 +77,39 @@ Napi::Value MyObject::Multiply(const Napi::CallbackInfo& info) {
 
   return obj;
 }
+
+//==================================================================
+
+
+Napi::Value MyObject::GetApiVersion(const Napi::CallbackInfo& info) {
+  
+  return Napi::String::New(info.Env(), CHN_API_VERSION);
+}
+
+//新玩家建制記憶體與建立機率版本號碼
+Napi::Value MyObject::InitNewUser(const Napi::CallbackInfo& info) {
+    
+  char recordData[MAXIMUM_USER_RECORD_DATA_SIZE];
+  MathEnter.CreateNewChance(recordData);
+  return Napi::String::New(info.Env(), "InitNewUser");
+}
+
+//拿到版本
+Napi::Value MyObject::GetMathVersion(const Napi::CallbackInfo& info) {
+  
+  char version[16];
+  MathEnter.GetVersion(version);
+  return Napi::String::New(info.Env(), version);
+}
+
+Napi::Value MyObject::GetGameBaseValue(const Napi::CallbackInfo& info) {
+  
+  GameBase cGameBase(10);
+  cGameBase.GameLoop(0);
+  double num = (double)cGameBase.showNumber;
+  return Napi::Number::New(info.Env(), num);
+}
+//==================================================================
 
 Napi::Object InitAll(Napi::Env env, Napi::Object exports) {
   return MyObject::Init(env, exports);
