@@ -4,12 +4,18 @@
   "description": "",
   "main": "chnApi.js",
   "scripts": {
-    "test": "node chnApi.js"
+    "start": "node chnApi.js",
+    "build:debug": "node-gyp configure && node-gyp build --debug",
+    "build": "node-gyp configure && node-gyp build",
+    "clean": "node-gyp clean"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bindings": "^1.5.0",
     "node-addon-api": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^6.1.0"
   }
 }

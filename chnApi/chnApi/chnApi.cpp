@@ -1,4 +1,4 @@
-
+﻿
 #include <napi.h>
 #include "chnApi.h"
 #include "GameBase.h"
@@ -6,6 +6,7 @@
 
 using namespace std;
 
+//api 版號
 #define CHN_API_VERSION "chnapi20200415v0.1"
 
 Napi::FunctionReference MyObject::constructor;
