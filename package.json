@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node chnApi.js",
     "build:debug": "node-gyp configure && node-gyp build --debug",
-    "build": "node-gyp configure && node-gyp build",
+    "build:release": "node-gyp configure && node-gyp build",
     "clean": "node-gyp clean"
   },
   "author": "",
